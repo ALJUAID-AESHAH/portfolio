@@ -1,0 +1,33 @@
+.skill {
+    background: #165e5a;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+    height: 10px;
+    width: 90%;
+    border: 1px solid rgba(0, 0, 0, 3);
+    border-radius: 3px;
+    box-shadow: 0 0 10px #6fa19e;
+}
+
+.skill span {
+    height: 10px;
+    float: left;
+    background: #6fa19e;
+}
+
+.one {
+    width: 90%;
+}
+
+.two {
+    width: 50%;
+}
+
+.three {
+    width: 50%;
+}
+
+.four {
+    width: 90%;
+}

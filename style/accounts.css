@@ -1,0 +1,33 @@
+.icon {
+    font-size: 30px;
+}
+
+.accounts {
+    grid-area: 1/1/1/1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.accounts i {
+    margin: 6px;
+    color: black;
+}
+
+@media (min-width: 600px) and (max-width:900px) {
+    .accounts {
+        grid-area: 1/1/1/3;
+    }
+}
+
+@media (min-width:901px) {
+    .accounts {
+        grid-area: 1/1/1/3;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .accounts i {
+        margin: 6px;
+    }
+}

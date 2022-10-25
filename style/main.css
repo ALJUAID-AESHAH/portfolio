@@ -1,0 +1,129 @@
+@import url("projects.css");
+@import url("skills.css");
+@import url("accounts.css");
+
+/* Small Screens */
+
+.container {
+    display: grid;
+    width: auto;
+    grid-template-columns: 100%;
+    grid-template-rows: 50px 250px 100px 100px 100px 600px 100px 300px 150px;
+}
+
+.box {
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.header {
+    grid-area: 2/1/2/1;
+    background-image: url("../image/1.jpg");
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: 400px 300px;
+    background-position: center;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: underline;
+}
+
+.title h1,
+.title h2 {
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0;
+}
+
+.title h1 span {
+    color: #6fa19e;
+}
+
+.content1 p {
+    font-size: 20px;
+    font-weight: 400px;
+}
+
+.nestedGrid {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 25% 25% 25% 25%;
+}
+
+.footer h3 {
+    margin: auto;
+    font-size: 15px;
+    color: gray;
+}
+
+
+/* Medium Screens */
+
+@media (min-width: 600px) and (max-width:900px) {
+    .container {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 20% 80%;
+        grid-template-rows: 50px 300px 400px 500px 400px 150px;
+    }
+    .box {
+        padding: 2%;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+    .header {
+        grid-area: 2/1/2/3;
+        background-image: url("../image/1.jpg");
+        background-repeat: no-repeat;
+        background-size: 400px 300px;
+        background-position: center;
+    }
+    .footer {
+        grid-area: 6/1/6/3;
+    }
+}
+
+
+/* Large Screens */
+
+@media (min-width:901px) {
+    .container {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 20% 80%;
+        grid-template-rows: 50px 300px 100px 400px 400px 150px;
+    }
+    .box {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+    .header {
+        grid-area: 2/1/2/3;
+        background-image: url("../image/1.jpg");
+        background-repeat: no-repeat;
+        background-size: 400px 300px;
+        background-position: center;
+    }
+    .nestedGrid {
+        display: grid;
+        width: 100%;
+        height: 100%;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+    }
+    .footer {
+        grid-area: 6/1/6/3;
+    }
+}
